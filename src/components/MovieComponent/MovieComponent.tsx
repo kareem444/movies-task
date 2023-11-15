@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.module.scss'
+import styles from './MovieComponent.module.scss'
 import { IMoviesModel } from '../../interfaces/Movies'
 import { moviesData } from '../../utils/DummyMoviesData'
 
@@ -13,13 +13,13 @@ export const MovieComponent: React.FC<IMoviesModel> = ({ image, description, tit
     }
 
     return (
-        <div className={styles.container}>
-            <div className={styles.delete} onClick={onDelete}>X</div>
-            <div className={styles.imageContainer}>
-                <img src={image} />
+        <div className={styles.movie}>
+            <div className={styles.movie__delete} onClick={onDelete}>X</div>
+            <div className={styles.movie__imageContainer}>
+                <img src={image} className={styles.movie__imageContainer__img}/>
             </div>
-            <h3>{title}</h3>
-            <p>{description}</p>
+            <h3 className={styles.movie__title}>{title}</h3>
+            <p className={styles.movie__description}>{description}</p>
         </div>
     )
 }
