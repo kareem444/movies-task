@@ -1,0 +1,64 @@
+.container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    margin: 50px auto;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.01);
+        .delete{
+            display: block;
+        }
+    }
+
+    .delete {
+        position: absolute;
+        width: 25px;
+        top: -10px;
+        right: -10px;
+        z-index: 10;
+        background-color: red;
+        padding: 5px;
+        border-radius: 80px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        display: none;
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+    .imageContainer {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.353);
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: rgb(50, 50, 50);
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(68, 68, 68);
+    }
+}
