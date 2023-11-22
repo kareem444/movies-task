@@ -1,6 +1,5 @@
-export interface IMoviesModel {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
+export enum MOVIES_CATEGORIES {
+    WATCHED = "WATCHED",
+    WATCHING = "WATCHING",
+    WANT_TO_WATCH = "WANT_TO_WATCH",
 }

@@ -1,7 +1,7 @@
 import { IMAGE_SRC } from "../constants/ImageConstants";
-import { IMoviesModel } from "../interfaces/Movies";
+import { IMovieProperties } from "../reducer/movies/MoviesInterface";
 
-export const moviesData: IMoviesModel[] = [
+export const moviesData: IMovieProperties[] = [
     {
         id: 1,
         title: "The Adventure Begins",

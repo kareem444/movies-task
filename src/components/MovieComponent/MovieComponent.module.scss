@@ -4,35 +4,43 @@
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 100%;
     transition: all 0.3s ease-in-out;
     margin: 50px auto;
     position: relative;
+    cursor: pointer;
+
+    width: 100%;
 
     &:hover {
         transform: scale(1.01);
-        .movie__delete {
-            display: block;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: 2;
+        gap: 20px;
+
+        &__delete {
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            padding: 5px;
+            border-radius: 80px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.01);
+            }
         }
     }
 
-    &__delete {
-        position: absolute;
-        width: 25px;
-        top: -10px;
-        right: -10px;
-        z-index: 10;
-        background-color: red;
-        padding: 5px;
-        border-radius: 80px;
-        font-size: 20px;
-        color: white;
-        cursor: pointer;
-        display: none;
-        &:hover {
-            transform: scale(1.01);
-        }
-    }
 
     &__imageContainer {
         position: relative;

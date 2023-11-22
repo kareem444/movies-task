@@ -1,0 +1,5 @@
+export const AddMovieType = "ADD_MOVIE_TYPE" 
+export const RemoveMovieType = "REMOVE_MOVIE_TYPE" 
+export const ChangeMovieCategoryType = "CHANGE_MOVIE_CATEGORY_TYPE" 
+export const EditMovieType = "EDIT_MOVIE_TYPE" 
+export const SetEditMovieDataType = "SET_EDIT_MOVIE_DATA_TYPE" 
